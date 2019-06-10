@@ -14,3 +14,12 @@ function distanceFromHqInFeet(blocks) {
   //the return value of distanceFromHqInBlocks can then be used to calculate feet
   return distanceFromHqInBlocks(blocks) * 264;
 }
+
+function distanceTravelledInFeet (start, destination) {
+  if (start < destination) {
+    return (destination - start) * 264;
+  } else {
+    return (start - destination) * 264;
+  }
+}
+
