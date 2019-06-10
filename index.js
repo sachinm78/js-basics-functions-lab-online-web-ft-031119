@@ -9,9 +9,9 @@ function distanceFromHqInBlocks(blocks) {
   }
 }
  
-function distanceFromHqInFeet(blocks) {
+function distanceFromHqInFeet(feet) {
   // calls distanceFromHqInBlocks from inside the distanceFromHqInFeet function, passing the argument from distanceFromHqInFeet into distanceFromHqInBlocks
   //the return value of distanceFromHqInBlocks can then be used to calculate feet
-  blocksTravelled = distanceFromHqInBlocks()
+  blocksTravelled = distanceFromHqInBlocks(blocks)
   return blocksTravelled * 264;
 }
